@@ -4,7 +4,7 @@ import ammc from "../assets/works/2.png";
 import kyn from "../assets/works/3.png";
 import nex from "../assets/works/4.png";
 import ww from "../assets/works/5.png";
-import Image from "next/image";
+// import Image from "next/image";
 import Button from "./Button";
 
 export default function Work() {
@@ -25,25 +25,25 @@ export default function Work() {
         <div className="flex lg:w-full items-center xs:flex-col lg:flex-row ">
           <div className="flex lg:flex-col lg:w-2/5 p-2 xs:flex-col-reverse">
             <div>
-              <Image src={nex} />
+              <img alt='' src={nex} />
             </div>
             <Button text="See All" type="primary" />
           </div>
           <div className="flex lg:w-3/5 p-2 xs:flex-col lg:flex-row">
             <div className="flex lg:flex-col lg:w-1/2 p-2">
               <div className='xs:mr-5 lg:m-0'>
-                <Image src={ammc} />
+                <img alt='' src={ammc} />
               </div>
               <div>
-                <Image src={kyn} />
+                <img alt='' src={kyn} />
               </div>
             </div>
             <div className="flex lg:flex-col lg:w-1/2 p-2">
               <div className='xs:mr-5 lg:m-0'>
-                <Image src={esc} />
+                <img alt='' src={esc} />
               </div>
               <div>
-                <Image src={ww} />
+                <img alt='' src={ww} />
               </div>
             </div>
             </div>

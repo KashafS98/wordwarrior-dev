@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function BlogList({posts}) {
     return (
-        <div className='lg:py-40'>
+        <div className='lg:py-60'>
             <div className='w-3/5 bg-blue relative flex lg:flex-row xs:flex-col mx-auto p-5 lg:justify-between'>
                 <h1 className='lg:block xs:hidden text-cyan absolute -rotate-180 -left-14 top-8' style={{writingMode: 'vertical-lr'}}>Blogs</h1>
                 <h1 className='lg:hidden xs:block text-cyan my-5' >Blogs</h1>
