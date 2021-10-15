@@ -8,11 +8,11 @@ export default function PostList({ posts }) {
       {!posts && <div>No posts!</div>}
       <ul>
         {posts &&
-          posts.map((post) => {
+          posts.map((post, index) => {
             return (
-              <li key={post.slug}>
+              <li key={index}>
                 {post.frontmatter.date}: {` `}
-                <Link href={{ pathname: `/post/${post.slug}` }}>
+                <Link href={{ pathname: `/blog/${post.slug}` }}>
                   <a>{post?.frontmatter?.title}</a>
                 </Link>
               </li>
