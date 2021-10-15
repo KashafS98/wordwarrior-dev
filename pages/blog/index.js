@@ -1,5 +1,6 @@
 import Layout from '@components/Layout'
 import PostList from '@components/PostList'
+import _ from "lodash";
 
 import getPosts from '@utils/getPosts'
 
@@ -14,7 +15,9 @@ const Index = ({ posts, title, description, ...props }) => {
           <a href="https://url.netlify.com/r1j6ybSYU">Netlify</a>.
         </p>
         <main>
-          <PostList posts={posts} />
+          <PostList posts={_.uniqBy(posts, function (e) {
+                        return e.frontmatter.title;
+                      })} />
         </main>
         <p>
           You can look at the repository for this project{' '}
@@ -25,12 +28,6 @@ const Index = ({ posts, title, description, ...props }) => {
           <a href="https://url.netlify.com/ByVW0bCF8">here</a>.
         </p>
       </Layout>
-      <style jsx>{`
-        .title {
-          margin: 1rem auto;
-          font-size: 3rem;
-        }
-      `}</style>
     </>
   )
 }

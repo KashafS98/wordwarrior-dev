@@ -90,7 +90,7 @@ export default function BackgroundHOC({ children }) {
 
   return (
     <div
-      className={`bg-hoc relative transition-colors`}
+      className={`bg-hoc relative transition-colors min-h-screen`}
       style={{backgroundColor: `rgb(36,0,70,1)`}}
       id='bg-color'
     >
