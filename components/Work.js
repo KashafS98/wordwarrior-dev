@@ -1,10 +1,4 @@
 import React from "react";
-import esc from "../assets/works/1.png";
-import ammc from "../assets/works/2.png";
-import kyn from "../assets/works/3.png";
-import nex from "../assets/works/4.png";
-import ww from "../assets/works/5.png";
-import Image from "next/image";
 import Button from "./Button";
 
 export default function Work() {
